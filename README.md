@@ -91,15 +91,16 @@ mm --list
 ```
 
 Example moods:
-• happy
-• sad
-• tired
-• angry
-• love
-• confused
-• excited
-• chill
-• stressed
+
+- happy
+- sad
+- tired
+- angry
+- love
+- confused
+- excited
+- chill
+- stressed
 
 ---
 
