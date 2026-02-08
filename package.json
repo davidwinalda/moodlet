@@ -9,12 +9,22 @@
   "scripts": {
     "test": "node --test"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidwinalda/moodlet.git"
+  },
   "keywords": [
     "cli",
     "ascii",
     "mood",
     "fun",
     "terminal"
+  ],
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
   ],
   "author": "David Winalda",
   "license": "MIT",
