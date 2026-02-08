@@ -1,0 +1,25 @@
+{
+  "name": "moodlet",
+  "version": "0.1.0",
+  "description": "A CLI that prints ASCII moods",
+  "bin": {
+    "mm": "./bin/moodlet.js"
+  },
+  "exports": "./src/engine.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "cli",
+    "ascii",
+    "mood",
+    "fun",
+    "terminal"
+  ],
+  "author": "David Winalda",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  }
+}
