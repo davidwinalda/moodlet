@@ -1,6 +1,6 @@
 # moodlet
 
-A tiny, dependency-free CLI that prints **ASCII moods** in your terminal.
+Moodlet mood (mm) is a tiny, dependency-free CLI that prints **ASCII moods** in your terminal.
 
 No dependencies.  
 No configuration.  
@@ -16,7 +16,7 @@ Just moods.
 npx moodlet happy
 ```
 
-Install globally
+### Install globally
 
 ```bash
 npm install -g moodlet

@@ -6,7 +6,7 @@
  *   - mm --help
  */
 
-import { getMoodArt, listMoods, normalizeInput } from "./engine.js";
+import { getMoodArt, listMoods } from "./engine.js";
 
 /**
  * Map short flags to long flags
