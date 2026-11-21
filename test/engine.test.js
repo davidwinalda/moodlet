@@ -7,6 +7,7 @@ import {
   listMoods,
   pickOne,
 } from "../src/engine.js";
+import { MOODS } from "../src/moods.js";
 
 test("listMoods returns non-empty list", () => {
   const moods = listMoods();
@@ -34,4 +35,15 @@ test("pickOne deterministic with seed", () => {
   assert.equal(pickOne(list, 1), "b");
   assert.equal(pickOne(list, 2), "c");
   assert.equal(pickOne(list, 3), "a");
+});
+
+test("every row of every face is as wide as its frame", () => {
+  for (const [mood, faces] of Object.entries(MOODS)) {
+    for (const face of faces) {
+      const rows = face.split("\n").filter((row) => row.trim() !== "");
+      // Count characters, not UTF-16 units, so ◕ or ♥ count as one.
+      const widths = rows.map((row) => [...row.trimEnd()].length);
+      assert.deepEqual(widths, widths.map(() => widths[0]), `${mood}: ${widths}`);
+    }
+  }
 });
